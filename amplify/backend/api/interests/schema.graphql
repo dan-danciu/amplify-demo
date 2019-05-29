@@ -1,0 +1,19 @@
+type Person @model
+{
+  id: ID!
+  name: String!
+  interests: [InterestsIntermediate] @connection(name: "PersonInterests")
+}
+type InterestsIntermediate @model
+{
+  id: ID!
+  interest: Interest @connection(name: "InterestsConnection")
+  person: Person @connection(name: "PersonInterests")
+}
+
+type Interest @model
+{
+  id: ID!
+  name: String!
+  personInterests: [InterestsIntermediate] @connection (name: "InterestsConnection")
+}
