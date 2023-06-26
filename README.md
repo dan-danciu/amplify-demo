@@ -30,7 +30,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ``` mermaid
 sequenceDiagram
-    Christie->>Josh: Hello Josh, how are you?
-    Josh-->>Christie: Great!
-    Christie->>Josh: See you later!
+    Nicu->>Dan: Hello Dan, how are you?
+    Dan-->>Nicu: Great!
+    Nicu->>Dan: See you later!
 ```
